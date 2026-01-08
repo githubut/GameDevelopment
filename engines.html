@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn game engines - Unity, Unreal Engine, Godot, and more for game development">
+    <title>Game Engines - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search engines...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="categories.html" class="breadcrumb-item">📚 Categories</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">⚙️ Game Engines</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">⚙️ Build Your Games</span>
+        <h1>Game Engines</h1>
+        <p class="hero-subtitle">Master the tools that power modern games. From beginner-friendly Unity to professional Unreal Engine, find the right engine for your project and learn it inside and out.</p>
+    </section>
+
+    <!-- Major Engines Section -->
+    <section class="section" id="engines">
+        <div class="category-section">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent);">🎮</div>
+                <div>
+                    <h2>Major Game Engines</h2>
+                    <p>Industry-standard development tools</p>
+                </div>
+            </div>
+            
+            <!-- Unity -->
+            <div class="subcategory-grid" id="unity">
+                <div class="subcategory-card" style="grid-column: span 2;">
+                    <h4 style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 2rem;">🎮</span> Unity Game Engine
+                    </h4>
+                    <p>The world's most popular game engine. Used for mobile games, indie titles, and even AAA productions. Free for beginners with full feature access.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                        <span class="subcategory-count">2D & 3D</span>
+                        <span class="subcategory-count">C# Scripting</span>
+                        <span class="subcategory-count">Cross-Platform</span>
+                    </div>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📦 Unity Basics</h4>
+                    <p>Interface, scenes, game objects, and basic workflow</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>💻 C# Scripting</h4>
+                    <p>MonoBehaviour, lifecycle methods, and component system</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎨 Unity Physics</h4>
+                    <p>Rigidbody, colliders, joints, and physics materials</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📱 Unity UI</h4>
+                    <p>Canvas, UI elements, layout groups, and responsive design</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎬 Animation</h4>
+                    <p>Animator controller, state machines, and blend trees</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>💾 Prefabs & Systems</h4>
+                    <p>Prefab variants, ScriptableObjects, and architecture patterns</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌍 DOTS & ECS</h4>
+                    <p>Data-oriented design, Entity Component System for performance</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+            
+            <!-- Unreal Engine -->
+            <div class="subcategory-grid" id="unreal" style="margin-top: 2rem;">
+                <div class="subcategory-card" style="grid-column: span 2;">
+                    <h4 style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 2rem;">🏗️</span> Unreal Engine
+                    </h4>
+                    <p>Professional AAA engine used by top studios. Features powerful Blueprints visual scripting and industry-leading graphics capabilities.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                        <span class="subcategory-count">3D Focus</span>
+                        <span class="subcategory-count">Blueprints</span>
+                        <span class="subcategory-count">AAA Quality</span>
+                    </div>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📦 UE5 Basics</h4>
+                    <p>Editor interface, levels, actors, and basic navigation</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔵 Blueprints</h4>
+                    <p>Visual scripting system for game logic without code</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>💻 C++ in UE5</h4>
+                    <p>Gameplay framework, UObject, and native development</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Gameplay Ability System</h4>
+                    <p>Abilities, attributes, and effects system</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>✨ Niagara VFX</h4>
+                    <p>Particle systems and visual effects creation</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📸 MetaHuman & Nanite</h4>
+                    <p>Photorealistic humans and virtualized geometry</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+            
+            <!-- Godot -->
+            <div class="subcategory-grid" id="godot" style="margin-top: 2rem;">
+                <div class="subcategory-card" style="grid-column: span 2;">
+                    <h4 style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="font-size: 2rem;">🌟</span> Godot Engine
+                    </h4>
+                    <p>Open-source, completely free engine with a unique scene system. Excellent for 2D games and lightweight projects. No royalties or subscription fees.</p>
+                    <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem;">
+                        <span class="subcategory-count">Open Source</span>
+                        <span class="subcategory-count">Lightweight</span>
+                        <span class="subcategory-count">GDScript</span>
+                    </div>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📦 Godot Basics</h4>
+                    <p>Interface, scenes, nodes, and scene system</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🐍 GDScript</h4>
+                    <p>Python-like scripting language for game logic</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎨 2D in Godot</h4>
+                    <p>Sprites, tilemaps, and 2D physics</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📦 3D in Godot</h4>
+                    <p>Meshes, materials, and 3D physics</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Signals & Groups</h4>
+                    <p>Decoupled communication and object organization</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🧩 Export & Deployment</h4>
+                    <p>Building for PC, mobile, and web platforms</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Engines Section -->
+        <div class="category-section" id="web">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">🌐</div>
+                <div>
+                    <h2>Web-Based Engines</h2>
+                    <p>Create games that run in browsers</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎮 Phaser 3</h4>
+                    <p>Popular 2D game framework for JavaScript. Great for browser games with extensive documentation.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📦 Three.js</h4>
+                    <p>3D graphics library for JavaScript. Create 3D browser games and experiences.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🏛️ Babylon.js</h4>
+                    <p>Powerful 3D engine from Microsoft. Full game engine capabilities in the browser.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Engines Section -->
+        <div class="category-section" id="mobile">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">📱</div>
+                <div>
+                    <h2>Mobile & Cross-Platform</h2>
+                    <p>Reach players on all devices</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🤖 Android (Kotlin/Java)</h4>
+                    <p>Native Android development with Java or Kotlin using Android Studio and LibGDX.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🍎 iOS (Swift)</h4>
+                    <p>Native iOS game development with SpriteKit or SceneKit for 2D/3D games.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌍 React Native</h4>
+                    <p>Build mobile games using JavaScript and React with libraries like Matter.js.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specialized Tools Section -->
+        <div class="category-section" id="specialized">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">🎯</div>
+                <div>
+                    <h2>Specialized Tools</h2>
+                    <p>Tools for specific game genres</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>📖 RPG Maker</h4>
+                    <p>Specialized for role-playing games. Create JRPGs without coding using event systems.</p>
+                    <span class="subcategory-count">No Code</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎬 Ren'Py</h4>
+                    <p>Visual novel engine. Create story-driven games with dialogue and choices.</p>
+                    <span class="subcategory-count">No Code</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🕵️ Adventure Game Studio</h4>
+                    <p>Point-and-click adventure games. Create classic LucasArts-style adventures.</p>
+                    <span class="subcategory-count">No Code</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🏁 GameMaker</h4>
+                    <p>2D-focused engine with GML scripting. Great for platformers and arcade games.</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engine Comparison -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">⚖️ Engine Comparison</h2>
+            <p class="section-subtitle">Choose the right tool for your project</p>
+        </div>
+        
+        <div class="card" style="overflow-x: auto;">
+            <table style="width: 100%; min-width: 600px; border-collapse: collapse;">
+                <thead>
+                    <tr style="border-bottom: 3px solid var(--border-dark);">
+                        <th style="text-align: left; padding: 1rem;">Engine</th>
+                        <th style="text-align: left; padding: 1rem;">Best For</th>
+                        <th style="text-align: left; padding: 1rem;">Language</th>
+                        <th style="text-align: left; padding: 1rem;">Cost</th>
+                        <th style="text-align: left; padding: 1rem;">Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 2px solid var(--background);">
+                        <td style="padding: 1rem;">🎮 Unity</td>
+                        <td style="padding: 1rem;">Mobile, 2D, Indie</td>
+                        <td style="padding: 1rem;">C#</td>
+                        <td style="padding: 1rem;">Free / Plus</td>
+                        <td style="padding: 1rem;">Beginner</td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid var(--background);">
+                        <td style="padding: 1rem;">🏗️ Unreal</td>
+                        <td style="padding: 1rem;">AAA, 3D, Graphics</td>
+                        <td style="padding: 1rem;">C++ / Blueprints</td>
+                        <td style="padding: 1rem;">Free / 5% Royalties</td>
+                        <td style="padding: 1rem;">Intermediate</td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid var(--background);">
+                        <td style="padding: 1rem;">🌟 Godot</td>
+                        <td style="padding: 1rem;">2D, Indie, Open Source</td>
+                        <td style="padding: 1rem;">GDScript / C#</td>
+                        <td style="padding: 1rem;">Free</td>
+                        <td style="padding: 1rem;">Beginner</td>
+                    </tr>
+                    <tr style="border-bottom: 2px solid var(--background);">
+                        <td style="padding: 1rem;">📱 Phaser</td>
+                        <td style="padding: 1rem;">Browser Games, 2D</td>
+                        <td style="padding: 1rem;">JavaScript</td>
+                        <td style="padding: 1rem;">Free</td>
+                        <td style="padding: 1rem;">Beginner</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 1rem;">🎮 GameMaker</td>
+                        <td style="padding: 1rem;">2D, Platformers</td>
+                        <td style="padding: 1rem;">GML</td>
+                        <td style="padding: 1rem;">Free / $99</td>
+                        <td style="padding: 1rem;">Beginner</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Learning Resources CTA -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>📚 Engine Resources</h2>
+            <p>Get started with official documentation, tutorials, and learning paths for each engine.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="resources.html" class="btn btn-primary">View Engine Resources</a>
+                <a href="schedule.html" class="btn btn-secondary">View Learning Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://unity.com" target="_blank">Unity</a></li>
+                    <li><a href="https://unrealengine.com" target="_blank">Unreal Engine</a></li>
+                    <li><a href="https://godotengine.org" target="_blank">Godot</a></li>
+                    <li><a href="https://phaser.io" target="_blank">Phaser</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

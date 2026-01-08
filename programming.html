@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master game programming - Learn C#, C++, Python, algorithms, AI, and more">
+    <title>Programming - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search programming...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="categories.html" class="breadcrumb-item">📚 Categories</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">💻 Programming</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">💻 Code Your Dreams</span>
+        <h1>Game Programming</h1>
+        <p class="hero-subtitle">Master the languages and techniques used to bring games to life. From C# fundamentals to advanced AI algorithms, build the technical foundation for your game development career.</p>
+    </section>
+
+    <!-- Programming Languages Section -->
+    <section class="section" id="languages">
+        <div class="category-section">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">📝</div>
+                <div>
+                    <h2>Programming Languages</h2>
+                    <p>The languages of game development</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🔵 C# (Unity)</h4>
+                    <p>The primary language for Unity game development. Object-oriented, versatile, and industry-standard for indie and mobile games.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔴 C++ (Unreal)</h4>
+                    <p>The powerhouse behind Unreal Engine and AAA games. High performance, memory control, and industry demand.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🐍 Python</h4>
+                    <p>Great for learning programming concepts, scripting tools, and building prototypes. Used with Godot and Panda3D.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🟡 JavaScript (Web)</h4>
+                    <p>Create browser-based games with Phaser, Three.js, or raw Canvas API. No installation required!</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🟢 Lua</h4>
+                    <p>Lightweight scripting language used by Corona, LÖVE, and as an embedded scripting language in many engines.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🟣 GDScript (Godot)</h4>
+                    <p>Python-like language designed specifically for Godot. Easy to learn and powerful for game logic.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Core Concepts Section -->
+        <div class="category-section" id="concepts">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent);">🧠</div>
+                <div>
+                    <h2>Core Programming Concepts</h2>
+                    <p>Foundational knowledge for game developers</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🏗️ Object-Oriented Programming</h4>
+                    <p>Classes, inheritance, polymorphism, and encapsulation - essential for organizing game code.</p>
+                    <span class="subcategory-count">Fundamental</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📊 Data Structures</h4>
+                    <p>Arrays, lists, stacks, queues, trees, and graphs - choosing the right structure for game data.</p>
+                    <span class="subcategory-count">Fundamental</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🧮 Algorithms</h4>
+                    <p>Sorting, searching, pathfinding, and optimization algorithms used throughout game development.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎨 Design Patterns</h4>
+                    <p>Singleton, Observer, Factory, State Machine - proven solutions to common game development problems.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Math Section -->
+        <div class="category-section" id="math">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">📐</div>
+                <div>
+                    <h2>Game Mathematics</h2>
+                    <p>The math behind game mechanics</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>📍 Coordinate Systems</h4>
+                    <p>2D Cartesian coordinates, 3D space, screen vs. world coordinates, and camera transformations.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>➡️ Vectors</h4>
+                    <p>Vector math for movement, direction, velocity, and understanding game physics.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔺 Trigonometry</h4>
+                    <p>Sin, cos, tan for rotation, angles, and calculating trajectories in games.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📏 Matrices</h4>
+                    <p>Transformation matrices for scaling, rotation, and translation of game objects.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔄 Quaternions</h4>
+                    <p>Understanding 3D rotation without gimbal lock - essential for camera and character rotation.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game AI Section -->
+        <div class="category-section" id="ai">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">🤖</div>
+                <div>
+                    <h2>Game AI</h2>
+                    <p>Creating intelligent game behavior</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🛤️ Pathfinding (A*)</h4>
+                    <p>The A* algorithm and its variants for finding optimal paths through game worlds.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔲 Finite State Machines</h4>
+                    <p>Simple AI behavior systems using states and transitions - perfect for enemy AI.</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌳 Behavior Trees</h4>
+                    <p>More complex AI systems with hierarchical behavior - used in modern games.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>👁️ Steering Behaviors</h4>
+                    <p>Seek, flee, wander, and pursuit behaviors for natural-looking AI movement.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Networking Section -->
+        <div class="category-section" id="networking">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-pink);">🌐</div>
+                <div>
+                    <h2>Multiplayer & Networking</h2>
+                    <p>Building connected games</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🏠 Client-Server Architecture</h4>
+                    <p>Understanding authoritative servers, client prediction, and server reconciliation.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📡 UDP vs TCP</h4>
+                    <p>When to use each protocol and hybrid approaches for game networking.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>⏱️ Lag Compensation</h4>
+                    <p>Techniques for handling network latency: interpolation, extrapolation, and rollback.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optimization Section -->
+        <div class="category-section" id="optimization">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">⚡</div>
+                <div>
+                    <h2>Performance & Optimization</h2>
+                    <p>Making games run smoothly</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>⏱️ Profiling Tools</h4>
+                    <p>Using Unity Profiler, Unreal Insights, and other tools to identify bottlenecks.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>💾 Memory Management</h4>
+                    <p>Object pooling, garbage collection optimization, and memory budgets.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎯 Draw Call Optimization</h4>
+                    <p>Batching, instancing, and material optimization for better rendering performance.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔧 Code Optimization</h4>
+                    <p>Algorithmic improvements, data locality, and CPU vs GPU optimization strategies.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources CTA -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>📚 Programming Resources</h2>
+            <p>Explore our curated collection of programming tutorials, documentation, and courses from top platforms.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="resources.html" class="btn btn-primary">View Programming Resources</a>
+                <a href="schedule.html" class="btn btn-secondary">View Learning Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://unity.com" target="_blank">Unity</a></li>
+                    <li><a href="https://unrealengine.com" target="_blank">Unreal Engine</a></li>
+                    <li><a href="https://godotengine.org" target="_blank">Godot</a></li>
+                    <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">C# Docs</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

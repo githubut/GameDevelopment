@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn game design - Mechanics, level design, narrative, balancing, and player psychology">
+    <title>Game Design - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search design...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="categories.html" class="breadcrumb-item">📚 Categories</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">📐 Game Design</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">📐 Design Fun</span>
+        <h1>Game Design</h1>
+        <p class="hero-subtitle">Master the art of creating engaging gameplay experiences. Learn mechanics, level design, storytelling, balancing, and how to create games that players love.</p>
+    </section>
+
+    <!-- Game Mechanics Section -->
+    <section class="section" id="mechanics">
+        <div class="category-section">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">⚔️</div>
+                <div>
+                    <h2>Game Mechanics</h2>
+                    <p>The rules and systems of play</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🔄 Core Loops</h4>
+                    <p>The fundamental cycle of actions that players repeat. The heartbeat of engagement.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📈 Progression Systems</h4>
+                    <p>Character advancement, skill trees, unlockables, and player growth mechanics.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Player Agency</h4>
+                    <p>Meaningful choices, consequences, and player control over game outcomes.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🧩 Puzzle Design</h4>
+                    <p>Creating satisfying puzzles that challenge players without frustrating them.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎯 Goals & Objectives</h4>
+                    <p>Short-term and long-term goals that guide player motivation and engagement.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Level Design Section -->
+        <div class="category-section" id="level">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent);">🏗️</div>
+                <div>
+                    <h2>Level Design</h2>
+                    <p>Creating engaging game spaces</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🗺️ Layout Principles</h4>
+                    <p>Positive/negative space, sight lines, and spatial rhythm in level design.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎢 Pacing</h4>
+                    <p>Controlling tension and release through level structure and challenge distribution.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>👁️ Guiding the Player</h4>
+                    <p>Visual cues, lighting, sound, and level geometry to direct player attention.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔍 Exploration & Discovery</h4>
+                    <p>Rewarding curiosity and creating memorable moments through level secrets.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>♿ Accessibility</h4>
+                    <p>Designing levels that work for different skill levels and player abilities.</p>
+                    <span class="subcategory-count">Important</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Narrative Design Section -->
+        <div class="category-section" id="narrative">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">📖</div>
+                <div>
+                    <h2>Narrative Design</h2>
+                    <p>Storytelling in games</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🌳 Narrative Structures</h4>
+                    <p>Three-act structure, hero's journey, and nonlinear storytelling in games.</p>
+                    <span class="subcategory-count">Foundation</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>💬 Dialogue Design</h4>
+                    <p>Writing natural dialogue, character voices, and conversation systems.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🗳️ Choice & Consequence</h4>
+                    <p>Meaningful player choices that affect story and character relationships.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌍 World-Building</h4>
+                    <p>Creating immersive game worlds with history, lore, and consistent rules.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📚 Environmental Storytelling</h4>
+                    <p>Telling stories through level design, objects, and visual details.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Balancing Section -->
+        <div class="category-section" id="balancing">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">⚖️</div>
+                <div>
+                    <h2>Game Balancing</h2>
+                    <p>Fair and engaging competition</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>📊 Stat Balancing</h4>
+                    <p>Balancing character attributes, damage numbers, and progression rates.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Difficulty Curves</h4>
+                    <p>Creating fair challenges that scale with player skill and progression.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>⚔️ Multiplayer Balance</h4>
+                    <p>Fair competition in multiplayer: character balance, map symmetry, and meta.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎲 RNG & Skill</h4>
+                    <p>Balancing randomness with player agency for satisfying gameplay.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player Psychology Section -->
+        <div class="category-section" id="player">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-pink);">👤</div>
+                <div>
+                    <h2>Player Psychology</h2>
+                    <p>Understanding player motivation</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎯 Player Types</h4>
+                    <p>Achievers, explorers, killers, and socializers. Understanding different motivations.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌊 Flow State</h4>
+                    <p>Creating the perfect balance of challenge and skill for engaging gameplay.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🏆 Feedback & Rewards</h4>
+                    <p>Visual, audio, and haptic feedback that reinforces positive player actions.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Addiction vs Engagement</h4>
+                    <p>Ethical game design that respects player time and promotes healthy play.</p>
+                    <span class="subcategory-count">Important</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documentation Section -->
+        <div class="category-section" id="documentation">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">📄</div>
+                <div>
+                    <h2>Design Documentation</h2>
+                    <p>Communicating your vision</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>📋 Game Design Documents</h4>
+                    <p>Comprehensive GDDs that communicate vision, mechanics, and features.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📝 One-Page Designs</h4>
+                    <p>Concise summaries for pitching ideas and quick team communication.</p>
+                    <span class="subcategory-count">Practical</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📊 Feature Specs</h4>
+                    <p>Detailed specifications for individual features and systems.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Prototyping</h4>
+                    <p>Rapid prototyping methods to test and iterate on game ideas quickly.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Principles Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">✨ Core Design Principles</h2>
+            <p class="section-subtitle">Fundamental concepts every designer should know</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <h3>🎮 Rule of Fun</h3>
+                <p>Every element should contribute to player enjoyment. If it's not fun, cut it or change it.</p>
+            </div>
+            
+            <div class="card">
+                <h3>🔄 Iteration</h3>
+                <p>Great games are made through many iterations. Prototype, test, gather feedback, repeat.</p>
+            </div>
+            
+            <div class="card">
+                <h3>👥 Player-First Design</h3>
+                <p>Design for your target audience. Know who you're making the game for.</p>
+            </div>
+            
+            <div class="card">
+                <h3>🎯 Clarity</h3>
+                <p>Players should always understand what's happening, what they can do, and what they should do next.</p>
+            </div>
+            
+            <div class="card">
+                <h3>💡 Emergence</h3>
+                <p>Design systems that allow for unexpected and creative player solutions.</p>
+            </div>
+            
+            <div class="card">
+                <h3>🎨 Consistency</h3>
+                <p>Unified visual style, controls, and rules create a coherent experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources CTA -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>📚 Design Resources</h2>
+            <p>Explore books, courses, and articles from legendary game designers to improve your craft.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="resources.html" class="btn btn-primary">View Design Resources</a>
+                <a href="schedule.html" class="btn btn-secondary">View Learning Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.gdcvault.com" target="_blank">GDC Vault</a></li>
+                    <li><a href="https://www.gamasutra.com" target="_blank">Gamasutra</a></li>
+                    <li><a href="https://www.coursera.org/specializations/game-design" target="_blank">Coursera Courses</a></li>
+                    <li><a href="https://magicandothers.blogspot.com" target="_blank">Design Blogs</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

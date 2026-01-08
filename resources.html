@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curated game development resources from Google, Unity, Unreal, and more">
+    <title>Resources - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link active">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search resources..." id="resource-search">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">🔗 Resources</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">🔗 Curated Collection</span>
+        <h1>Learning Resources</h1>
+        <p class="hero-subtitle">The best tutorials, courses, documentation, and learning materials from Google, Unity, Unreal, and other top platforms. All verified and regularly updated.</p>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="resource-filters" style="justify-content: center;">
+            <button class="filter-btn active" data-filter="all">📚 All Resources</button>
+            <button class="filter-btn" data-filter="video">📺 Videos</button>
+            <button class="filter-btn" data-filter="course">📖 Courses</button>
+            <button class="filter-btn" data-filter="documentation">📄 Documentation</button>
+            <button class="filter-btn" data-filter="article">📝 Articles</button>
+            <button class="filter-btn" data-filter="tool">🛠️ Tools</button>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="section">
+        <div class="resource-grid">
+            <!-- Google Resources -->
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                    <span style="color: var(--accent);">🟢 Google</span>
+                </div>
+                <h4 class="resource-title">Google Android Game Development</h4>
+                <p class="resource-description">Official Google resources for developing games on Android. Covers performance optimization, Google Play integration, and mobile best practices.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">📱 Android</span>
+                    <span class="resource-tag">📚 Beginner-Advanced</span>
+                </div>
+                <a href="https://developer.android.com/games" target="_blank" class="resource-link">Visit Google Developer →</a>
+            </div>
+
+            <div class="resource-card" data-type="documentation">
+                <div class="resource-header">
+                    <span class="resource-type documentation">📄 Docs</span>
+                    <span style="color: var(--accent);">🟢 Google</span>
+                </div>
+                <h4 class="resource-title">Google Play Games Services</h4>
+                <p class="resource-description">Documentation for integrating achievements, leaderboards, cloud saves, and multiplayer with Google Play.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">📱 Android</span>
+                    <span class="resource-tag">📚 Intermediate</span>
+                </div>
+                <a href="https://developers.google.com/games" target="_blank" class="resource-link">Visit Documentation →</a>
+            </div>
+
+            <!-- Unity Resources -->
+            <div class="resource-card" data-type="video">
+                <div class="resource-header">
+                    <span class="resource-type video">📺 Video</span>
+                    <span style="color: var(--primary);">🟣 Unity</span>
+                </div>
+                <h4 class="resource-title">Unity Official Learning Pathways</h4>
+                <p class="resource-description">Structured video courses covering everything from basics to advanced topics. Includes 2D, 3D, and VR/AR development tracks.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🎮 Unity</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://learn.unity.com" target="_blank" class="resource-link">Start Learning →</a>
+            </div>
+
+            <div class="resource-card" data-type="documentation">
+                <div class="resource-header">
+                    <span class="resource-type documentation">📄 Docs</span>
+                    <span style="color: var(--primary);">🟣 Unity</span>
+                </div>
+                <h4 class="resource-title">Unity Scripting API</h4>
+                <p class="resource-description">Complete API documentation for Unity's C# scripting. Searchable reference for all MonoBehaviour classes and methods.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">💻 C#</span>
+                    <span class="resource-tag">📚 Reference</span>
+                </div>
+                <a href="https://docs.unity3d.com/ScriptReference" target="_blank" class="resource-link">View API Docs →</a>
+            </div>
+
+            <div class="resource-card" data-type="article">
+                <div class="resource-header">
+                    <span class="resource-type article">📝 Article</span>
+                    <span style="color: var(--primary);">🟣 Unity</span>
+                </div>
+                <h4 class="resource-title">Unity Best Practices Guide</h4>
+                <p class="resource-description">Comprehensive guide to Unity best practices including project organization, performance optimization, and code architecture.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">⚡ Best Practices</span>
+                    <span class="resource-tag">📚 Intermediate</span>
+                </div>
+                <a href="https://docs.unity3d.com/Manual/UnityBestPractices.html" target="_blank" class="resource-link">Read Guide →</a>
+            </div>
+
+            <!-- Unreal Engine Resources -->
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                    <span style="color: var(--accent-orange);">🔴 Unreal</span>
+                </div>
+                <h4 class="resource-title">Unreal Engine Learning Library</h4>
+                <p class="resource-description">Official Epic Games learning resources including video tutorials, documentation, and sample projects for Unreal Engine 5.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🏗️ UE5</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://www.unrealengine.com/en-US/learn" target="_blank" class="resource-link">Start Learning →</a>
+            </div>
+
+            <div class="resource-card" data-type="documentation">
+                <div class="resource-header">
+                    <span class="resource-type documentation">📄 Docs</span>
+                    <span style="color: var(--accent-orange);">🔴 Unreal</span>
+                </div>
+                <h4 class="resource-title">Unreal Engine Documentation</h4>
+                <p class="resource-description">Complete documentation for Unreal Engine including Blueprints, C++,美术, and engine features.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🏗️ UE5</span>
+                    <span class="resource-tag">📚 Reference</span>
+                </div>
+                <a href="https://docs.unrealengine.com" target="_blank" class="resource-link">View Docs →</a>
+            </div>
+
+            <div class="resource-card" data-type="video">
+                <div class="resource-header">
+                    <span class="resource-type video">📺 Video</span>
+                    <span style="color: var(--accent-orange);">🔴 Unreal</span>
+                </div>
+                <h4 class="resource-title">Unreal Engine YouTube Channel</h4>
+                <p class="resource-description">Official Epic Games YouTube channel with tutorials, roadmap updates, and community showcases.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🎬 YouTube</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://www.youtube.com/c/unrealengine" target="_blank" class="resource-link">Watch Videos →</a>
+            </div>
+
+            <!-- Godot Resources -->
+            <div class="resource-card" data-type="documentation">
+                <div class="resource-header">
+                    <span class="resource-type documentation">📄 Docs</span>
+                    <span style="color: var(--accent);">🟢 Godot</span>
+                </div>
+                <h4 class="resource-title">Godot Documentation</h4>
+                <p class="resource-description">Complete Godot engine documentation including GDScript reference, node descriptions, and step-by-step tutorials.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🌟 Godot</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://docs.godotengine.org" target="_blank" class="resource-link">Read Docs →</a>
+            </div>
+
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                    <span style="color: var(--accent);">🟢 Godot</span>
+                </div>
+                <h4 class="resource-title">Godot Game Engine Tutorial Series</h4>
+                <p class="resource-description">Comprehensive video tutorial series covering 2D and 3D game development with Godot 4.x from the official documentation.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🌟 Godot 4</span>
+                    <span class="resource-tag">📚 Beginner</span>
+                </div>
+                <a href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/index.html" target="_blank" class="resource-link">Start Tutorial →</a>
+            </div>
+
+            <!-- Programming Resources -->
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                    <span style="color: var(--primary);">💻 C#</span>
+                </div>
+                <h4 class="resource-title">Microsoft C# Documentation</h4>
+                <p class="resource-description">Official Microsoft documentation and tutorials for C# programming language. Perfect for learning the language used in Unity.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">💻 C#</span>
+                    <span class="resource-tag">📚 Beginner-Advanced</span>
+                </div>
+                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="resource-link">Learn C# →</a>
+            </div>
+
+            <div class="resource-card" data-type="documentation">
+                <div class="resource-header">
+                    <span class="resource-type documentation">📄 Docs</span>
+                    <span style="color: var(--accent-orange);">💻 C++</span>
+                </div>
+                <h4 class="resource-title">C++ Reference for Game Dev</h4>
+                <p class="resource-description">Essential C++ concepts for Unreal Engine development including templates, memory management, and STL usage.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">💻 C++</span>
+                    <span class="resource-tag">📚 Intermediate</span>
+                </div>
+                <a href="https://en.cppreference.com/w/" target="_blank" class="resource-link">View Reference →</a>
+            </div>
+
+            <!-- Art & Design Resources -->
+            <div class="resource-card" data-type="tool">
+                <div class="resource-header">
+                    <span class="resource-type tool">🛠️ Tool</span>
+                    <span style="color: var(--accent-orange);">🎨 Blender</span>
+                </div>
+                <h4 class="resource-title">Blender Official Website</h4>
+                <p class="resource-description">Download Blender, the free and open source 3D creation suite. Includes extensive documentation and tutorial library.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">📦 3D</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://www.blender.org" target="_blank" class="resource-link">Get Blender →</a>
+            </div>
+
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                    <span style="color: var(--accent-pink);">🎨 Art</span>
+                </div>
+                <h4 class="resource-title">Blender Guru YouTube Channel</h4>
+                <p class="resource-description">One of the most popular Blender tutorial channels with comprehensive beginner courses and advanced techniques.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">📦 Modeling</span>
+                    <span class="resource-tag">📚 Beginner-Advanced</span>
+                </div>
+                <a href="https://www.youtube.com/c/BlenderGuru" target="_blank" class="resource-link">Watch Tutorials →</a>
+            </div>
+
+            <!-- Audio Resources -->
+            <div class="resource-card" data-type="tool">
+                <div class="resource-header">
+                    <span class="resource-type tool">🛠️ Tool</span>
+                    <span style="color: var(--accent-pink);">🎵 FMOD</span>
+                </div>
+                <h4 class="resource-title">FMOD Audio Middleware</h4>
+                <p class="resource-description">Professional audio middleware for game developers. Create adaptive audio experiences and implement complex sound systems.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🎵 Audio</span>
+                    <span class="resource-tag">📚 Intermediate</span>
+                </div>
+                <a href="https://www.fmod.com" target="_blank" class="resource-link">Explore FMOD →</a>
+            </div>
+
+            <div class="resource-card" data-type="tool">
+                <div class="resource-header">
+                    <span class="resource-type tool">🛠️ Tool</span>
+                    <span style="color: var(--accent-pink);">🎵 Wwise</span>
+                </div>
+                <h4 class="resource-title">Wwise Audio Engine</h4>
+                <p used by thousands of game developers worldwide for creating immersive audio experiences.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🎵 Audio</span>
+                    <span class="resource-tag">📚 Intermediate-Advanced</span>
+                </div>
+                <a href="https://www.audiokinetic.com/products/wwise/" target="_blank" class="resource-link">Explore Wwise →</a>
+            </div>
+
+            <!-- Game Design Resources -->
+            <div class="resource-card" data-type="article">
+                <div class="resource-header">
+                    <span class="resource-type article">📝 Article</span>
+                    <span style="color: var(--secondary);">📐 Design</span>
+                </div>
+                <h4 class="resource-title">GDC Vault - Game Design Archives</h4>
+                <p class="resource-description">Extensive library of game design talks from the Game Developers Conference. Learn from industry professionals.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">📐 Design</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://www.gdcvault.com" target="_blank" class="resource-link">Browse Archives →</a>
+            </div>
+
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                    <span style="color: var(--secondary);">📐 Design</span>
+                </div>
+                <h4 class="resource-title">Game Design Specialization</h4>
+                <p class="resource-description">Michigan State University offers a comprehensive game design specialization covering theory, prototyping, and production.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">📐 Design</span>
+                    <span class="resource-tag">📚 Beginner-Intermediate</span>
+                </div>
+                <a href="https://www.coursera.org/specializations/game-design" target="_blank" class="resource-link">Enroll Now →</a>
+            </div>
+
+            <!-- YouTube Channels -->
+            <div class="resource-card" data-type="video">
+                <div class="resource-header">
+                    <span class="resource-type video">📺 Video</span>
+                    <span style="color: #FF0000;">▶️ YouTube</span>
+                </div>
+                <h4 class="resource-title">Brackeys - Unity Tutorials</h4>
+                <p class="resource-description">One of the most popular Unity tutorial channels with clear, beginner-friendly explanations of game development concepts.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🎮 Unity</span>
+                    <span class="resource-tag">📚 Beginner</span>
+                </div>
+                <a href="https://www.youtube.com/c/Brackeys" target="_blank" class="resource-link">Watch Now →</a>
+            </div>
+
+            <div class="resource-card" data-type="video">
+                <div class="resource-header">
+                    <span class="resource-type video">📺 Video</span>
+                    <span style="color: #FF0000;">▶️ YouTube</span>
+                </div>
+                <h4 class="resource-title">Sebastian Lague - Game Dev Tutorials</h4>
+                <p class="resource-description">Excellent tutorials on algorithms, procedural generation, and Unity/C# development with a focus on understanding concepts deeply.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">💻 Unity</span>
+                    <span class="resource-tag">📚 Intermediate</span>
+                </div>
+                <a href="https://www.youtube.com/c/SebastianLague" target="_blank" class="resource-link">Watch Now →</a>
+            </div>
+
+            <div class="resource-card" data-type="video">
+                <div class="resource-header">
+                    <span class="resource-type video">📺 Video</span>
+                    <span style="color: #FF0000;">▶️ YouTube</span>
+                </div>
+                <h4 class="resource-title">Code Bullet - Game AI & Algorithms</h4>
+                <p class="resource-description">Entertaining and educational videos on game AI, algorithms, and interesting programming challenges.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🤖 AI</span>
+                    <span class="resource-tag">📚 Intermediate</span>
+                </div>
+                <a href="https://www.youtube.com/c/CodeBullet" target="_blank" class="resource-link">Watch Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Resources -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">🤝 Community Resources</h2>
+            <p class="section-subtitle">Connect with other developers and find community support</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon" style="background: #7289DA;">💬</div>
+                <h3>Discord Servers</h3>
+                <p>Join active game development communities on Discord for real-time help, feedback, and collaboration.</p>
+                <a href="https://discord.com/invite/unity" target="_blank" class="card-link">Unity Discord →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #0077B5;">👥</div>
+                <h3>GameDev Communities</h3>
+                <p>Connect with professionals on LinkedIn groups and attend local game jams and meetups.</p>
+                <a href="https://www.reddit.com/r/gamedev" target="_blank" class="card-link">Reddit r/gamedev →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #6E5494;">📝</div>
+                <h3>GameDev Blogs</h3>
+                <p>Follow industry blogs and post-mortems to learn from real game development experiences.</p>
+                <a href="https://www.gamasutra.com" target="_blank" class="card-link">Gamasutra →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://unity.com" target="_blank">Unity</a></li>
+                    <li><a href="https://unrealengine.com" target="_blank">Unreal Engine</a></li>
+                    <li><a href="https://godotengine.org" target="_blank">Godot</a></li>
+                    <li><a href="https://blender.org" target="_blank">Blender</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

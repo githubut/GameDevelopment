@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore all game development categories - Programming, Game Engines, Art & Animation, Audio, and Game Design">
+    <title>Categories - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link active">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search topics...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">📚 Categories</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">📚 All Topics</span>
+        <h1>Game Development Categories</h1>
+        <p class="hero-subtitle">Deep dive into every aspect of game development. From programming to art, audio to design - find everything you need to become a well-rounded game developer.</p>
+    </section>
+
+    <!-- Programming Category -->
+    <section class="section">
+        <div class="category-section" id="programming">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">💻</div>
+                <div>
+                    <h2>Programming</h2>
+                    <p>Master the code behind games</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <a href="programming.html#languages" class="subcategory-card">
+                    <h4>📝 Programming Languages</h4>
+                    <p>C#, C++, Python, JavaScript, Lua, and more</p>
+                    <span class="subcategory-count">6 Languages</span>
+                </a>
+                
+                <a href="programming.html#concepts" class="subcategory-card">
+                    <h4>🧠 Core Concepts</h4>
+                    <p>OOP, algorithms, data structures, design patterns</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="programming.html#math" class="subcategory-card">
+                    <h4>📐 Game Math</h4>
+                    <p>Linear algebra, vectors, matrices, quaternions</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="programming.html#ai" class="subcategory-card">
+                    <h4>🤖 Game AI</h4>
+                    <p>Pathfinding, state machines, behavior trees</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="programming.html#networking" class="subcategory-card">
+                    <h4>🌐 Networking</h4>
+                    <p>Multiplayer, client-server, lag compensation</p>
+                    <span class="subcategory-count">3 Topics</span>
+                </a>
+                
+                <a href="programming.html#optimization" class="subcategory-card">
+                    <h4>⚡ Optimization</h4>
+                    <p>Performance, memory, profiling, debugging</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Game Engines Category -->
+        <div class="category-section" id="engines">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent);">⚙️</div>
+                <div>
+                    <h2>Game Engines</h2>
+                    <p>Tools to bring your games to life</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <a href="engines.html#unity" class="subcategory-card">
+                    <h4>🎮 Unity</h4>
+                    <p>The world's most popular game engine</p>
+                    <span class="subcategory-count">8 Topics</span>
+                </a>
+                
+                <a href="engines.html#unreal" class="subcategory-card">
+                    <h4>🏗️ Unreal Engine</h4>
+                    <p>Professional AAA game development</p>
+                    <span class="subcategory-count">7 Topics</span>
+                </a>
+                
+                <a href="engines.html#godot" class="subcategory-card">
+                    <h4>🌟 Godot</h4>
+                    <p>Open-source and lightweight</p>
+                    <span class="subcategory-count">6 Topics</span>
+                </a>
+                
+                <a href="engines.html#web" class="subcategory-card">
+                    <h4>🌐 Web Engines</h4>
+                    <p>Phaser, Three.js, Babylon.js</p>
+                    <span class="subcategory-count">3 Engines</span>
+                </a>
+                
+                <a href="engines.html#mobile" class="subcategory-card">
+                    <h4>📱 Mobile Engines</h4>
+                    <p>Android, iOS, cross-platform</p>
+                    <span class="subcategory-count">3 Topics</span>
+                </a>
+                
+                <a href="engines.html#specialized" class="subcategory-card">
+                    <h4>🎯 Specialized Tools</h4>
+                    <p>Visual novels, RPG makers, specific genres</p>
+                    <span class="subcategory-count">4 Tools</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Art & Animation Category -->
+        <div class="category-section" id="art">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">🎨</div>
+                <div>
+                    <h2>Art & Animation</h2>
+                    <p>Create stunning visuals</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <a href="art.html#2d" class="subcategory-card">
+                    <h4>🖼️ 2D Art</h4>
+                    <p>Pixel art, vector art, illustrations</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="art.html#3d" class="subcategory-card">
+                    <h4>📦 3D Modeling</h4>
+                    <p>Blender, Maya, low-poly, high-poly</p>
+                    <span class="subcategory-count">6 Topics</span>
+                </a>
+                
+                <a href="art.html#animation" class="subcategory-card">
+                    <h4>🎬 Animation</h4>
+                    <p>2D sprites, 3D rigging, keyframing</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="art.html#texturing" class="subcategory-card">
+                    <h4>🎨 Texturing</h4>
+                    <p>UV mapping, PBR materials, shaders</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="art.html#ui" class="subcategory-card">
+                    <h4>🖱️ UI Design</h4>
+                    <p>Menus, HUDs, icons, user interfaces</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="art.html#vfx" class="subcategory-card">
+                    <h4>✨ Visual Effects</h4>
+                    <p>Particles, shaders, post-processing</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Audio Category -->
+        <div class="category-section" id="audio">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-pink);">🎵</div>
+                <div>
+                    <h2>Audio</h2>
+                    <p>Sound that brings games to life</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <a href="audio.html#music" class="subcategory-card">
+                    <h4>🎼 Music Composition</h4>
+                    <p>Melodies, harmony, leitmotifs, DAW basics</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="audio.html#sfx" class="subcategory-card">
+                    <h4>🔊 Sound Effects</h4>
+                    <p>Foley, synthesis, layering, editing</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="audio.html#implementation" class="subcategory-card">
+                    <h4>🎮 Audio Implementation</h4>
+                    <p>FMOD, Wwise, Unity Audio, Unreal Audio</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="audio.html#mixing" class="subcategory-card">
+                    <h4>🎛️ Mixing & Mastering</h4>
+                    <p>EQ, compression, spatial audio</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="audio.html#adaptive" class="subcategory-card">
+                    <h4>🔀 Adaptive Audio</h4>
+                    <p>Dynamic music, interactive sound design</p>
+                    <span class="subcategory-count">3 Topics</span>
+                </a>
+                
+                <a href="audio.html#tools" class="subcategory-card">
+                    <h4>🛠️ Audio Tools</h4>
+                    <p>DAWs, plugins, middleware software</p>
+                    <span class="subcategory-count">6 Tools</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Game Design Category -->
+        <div class="category-section" id="design">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">📐</div>
+                <div>
+                    <h2>Game Design</h2>
+                    <p>The art of creating fun experiences</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <a href="design.html#mechanics" class="subcategory-card">
+                    <h4>⚔️ Game Mechanics</h4>
+                    <p>Core loops, progression, systems design</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="design.html#level" class="subcategory-card">
+                    <h4>🏗️ Level Design</h4>
+                    <p>Layout, pacing, guiding the player</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="design.html#narrative" class="subcategory-card">
+                    <h4>📖 Narrative Design</h4>
+                    <p>Storytelling, dialogue, world-building</p>
+                    <span class="subcategory-count">5 Topics</span>
+                </a>
+                
+                <a href="design.html#balancing" class="subcategory-card">
+                    <h4>⚖️ Game Balancing</h4>
+                    <p>Difficulty, stats, fair play</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="design.html#player" class="subcategory-card">
+                    <h4>👤 Player Psychology</h4>
+                    <p>Motivation, flow, engagement</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+                
+                <a href="design.html#documentation" class="subcategory-card">
+                    <h4>📄 Documentation</h4>
+                    <p>GDDs, design docs, specs</p>
+                    <span class="subcategory-count">4 Topics</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>🎮 Ready to Dive Deeper?</h2>
+            <p>Each category contains detailed subtopics with resources, tutorials, and learning paths tailored to your skill level.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="schedule.html" class="btn btn-primary">View Full Schedule</a>
+                <a href="resources.html" class="btn btn-secondary">Browse Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://unity.com" target="_blank">Unity</a></li>
+                    <li><a href="https://unrealengine.com" target="_blank">Unreal Engine</a></li>
+                    <li><a href="https://godotengine.org" target="_blank">Godot</a></li>
+                    <li><a href="https://blender.org" target="_blank">Blender</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

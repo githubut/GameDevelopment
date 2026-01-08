@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="12-week game development learning schedule - Master game development from scratch">
+    <title>Learning Schedule - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link active">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search topics...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">🗺️ Learning Schedule</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">📅 12-Week Curriculum</span>
+        <h1>Your Game Dev Journey</h1>
+        <p class="hero-subtitle">A structured learning path designed to take you from complete beginner to published game developer. Complete each week, track your progress, and build real projects.</p>
+    </section>
+
+    <!-- Progress Overview -->
+    <section class="section">
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <h3>📊 Track Your Progress</h3>
+            <p>Click the checkboxes as you complete each topic. Your progress is saved automatically!</p>
+            <div style="display: flex; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--primary);">12</div>
+                    <div style="color: var(--text-light);">Total Weeks</div>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent);">48+</div>
+                    <div style="color: var(--text-light);">Topics</div>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--secondary);">5</div>
+                    <div style="color: var(--text-light);">Skills</div>
+                </div>
+                <div style="flex: 1; min-width: 150px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">1</div>
+                    <div style="color: var(--text-light);">Final Project</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Container -->
+    <section class="section">
+        <div class="schedule-container">
+            <!-- World 1: The Basics -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">🌍 World 1</span>
+                    <h3 class="week-title">The Basics - Foundation Skills</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week1-1">
+                        <div class="topic-checkbox"></div>
+                        <span>What is Game Development? - Overview of the industry</span>
+                    </div>
+                    <div class="topic-item" id="week1-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Introduction to Programming - Variables, loops, conditions</span>
+                    </div>
+                    <div class="topic-item" id="week1-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Setting Up Your Development Environment</span>
+                    </div>
+                    <div class="topic-item" id="week1-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Your First "Hello World" Program</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 2 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 2</span>
+                    <h3 class="week-title">Core Programming Concepts</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week2-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Functions and Methods - Writing reusable code</span>
+                    </div>
+                    <div class="topic-item" id="week2-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Data Structures - Arrays, Lists, Dictionaries</span>
+                    </div>
+                    <div class="topic-item" id="week2-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Object-Oriented Programming Basics - Classes and Objects</span>
+                    </div>
+                    <div class="topic-item" id="week2-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Debugging Techniques and Tools</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 3 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 3</span>
+                    <h3 class="week-title">Game Logic & Mathematics</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week3-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Coordinate Systems - 2D and 3D spaces</span>
+                    </div>
+                    <div class="topic-item" id="week3-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Basic Math for Games - Vectors and Trigonometry</span>
+                    </div>
+                    <div class="topic-item" id="week3-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Game Loop and Input Handling</span>
+                    </div>
+                    <div class="topic-item" id="week3-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Collision Detection Basics</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 4 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 4</span>
+                    <h3 class="week-title">Introduction to Game Engines</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week4-1">
+                        <div class="topic-checkbox"></div>
+                        <span>What is a Game Engine? - Unity, Unreal, Godot overview</span>
+                    </div>
+                    <div class="topic-item" id="week4-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Installing and Setting Up Unity</span>
+                    </div>
+                    <div class="topic-item" id="week4-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Unity Interface Tour - Scene, Game, Hierarchy views</span>
+                    </div>
+                    <div class="topic-item" id="week4-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Creating Your First Unity Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- World 2: Your First Engine -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">🌍 World 2</span>
+                    <h3 class="week-title">Building Your First Game</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week5-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Unity Components - Transforms, Sprites, Colliders</span>
+                    </div>
+                    <div class="topic-item" id="week5-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Writing Your First C# Scripts</span>
+                    </div>
+                    <div class="topic-item" id="week5-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Player Movement and Controls</span>
+                    </div>
+                    <div class="topic-item" id="week5-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Adding Static Objects and Environment</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 6 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 6</span>
+                    <h3 class="week-title">Game Mechanics</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week6-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Physics in Games - Rigidbodies and Forces</span>
+                    </div>
+                    <div class="topic-item" id="week6-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Implementing Jumping and Gravity</span>
+                    </div>
+                    <div class="topic-item" id="week6-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Collectibles and Scoring System</span>
+                    </div>
+                    <div class="topic-item" id="week6-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Basic Enemy AI - Patrol and Chase</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 7 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 7</span>
+                    <h3 class="week-title">Level Design</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week7-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Principles of Good Level Design</span>
+                    </div>
+                    <div class="topic-item" id="week7-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Creating Your First Level Layout</span>
+                    </div>
+                    <div class="topic-item" id="week7-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Adding Platforms and Obstacles</span>
+                    </div>
+                    <div class="topic-item" id="week7-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Lighting and Atmosphere</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 8 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 8</span>
+                    <h3 class="week-title">Polishing & UI</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week8-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Introduction to Game UI - Menus, HUDs</span>
+                    </div>
+                    <div class="topic-item" id="week8-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Creating a Main Menu</span>
+                    </div>
+                    <div class="topic-item" id="week8-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Health Bar and Score Display</span>
+                    </div>
+                    <div class="topic-item" id="week8-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Game Over and Win Screens</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- World 3: Asset Creation -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">🌍 World 3</span>
+                    <h3 class="week-title">Asset Creation & Polish</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week9-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Introduction to 2D Art for Games</span>
+                    </div>
+                    <div class="topic-item" id="week9-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Creating Pixel Art Sprites</span>
+                    </div>
+                    <div class="topic-item" id="week9-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Animation Principles - Walk cycles, idle animations</span>
+                    </div>
+                    <div class="topic-item" id="week9-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Importing and Using Sprites in Unity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 10 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 10</span>
+                    <h3 class="week-title">Audio Implementation</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week10-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Introduction to Game Audio</span>
+                    </div>
+                    <div class="topic-item" id="week10-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Adding Sound Effects to Game Actions</span>
+                    </div>
+                    <div class="topic-item" id="week10-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Background Music and Ambient Sounds</span>
+                    </div>
+                    <div class="topic-item" id="week10-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Audio Mixers and Volume Control</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 11 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">📅 Week 11</span>
+                    <h3 class="week-title">Advanced Features</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week11-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Particle Systems and Visual Effects</span>
+                    </div>
+                    <div class="topic-item" id="week11-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Saving and Loading Game Data</span>
+                    </div>
+                    <div class="topic-item" id="week11-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Camera Controls and Follow Systems</span>
+                    </div>
+                    <div class="topic-item" id="week11-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Building for Different Platforms</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 12 -->
+            <div class="week-card">
+                <div class="week-header">
+                    <span class="week-badge">🏆 Week 12</span>
+                    <h3 class="week-title">Final Project & Publishing</h3>
+                </div>
+                <div class="week-content">
+                    <div class="topic-item" id="week12-1">
+                        <div class="topic-checkbox"></div>
+                        <span>Complete Your First Game Project</span>
+                    </div>
+                    <div class="topic-item" id="week12-2">
+                        <div class="topic-checkbox"></div>
+                        <span>Testing and Bug Fixing</span>
+                    </div>
+                    <div class="topic-item" id="week12-3">
+                        <div class="topic-checkbox"></div>
+                        <span>Building Your Game for Distribution</span>
+                    </div>
+                    <div class="topic-item" id="week12-4">
+                        <div class="topic-checkbox"></div>
+                        <span>Next Steps - Continuing Your Journey</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Resources CTA -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>📚 Need More Details?</h2>
+            <p>Each topic in this schedule links to detailed resources, tutorials, and guides. Explore the categories for in-depth learning.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="categories.html" class="btn btn-primary">Explore Categories</a>
+                <a href="resources.html" class="btn btn-secondary">View Resources</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://unity.com" target="_blank">Unity</a></li>
+                    <li><a href="https://unrealengine.com" target="_blank">Unreal Engine</a></li>
+                    <li><a href="https://godotengine.org" target="_blank">Godot</a></li>
+                    <li><a href="https://blender.org" target="_blank">Blender</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

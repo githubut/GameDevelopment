@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn game art and animation - 2D art, 3D modeling, pixel art, character animation, and visual effects">
+    <title>Art & Animation - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search art...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="categories.html" class="breadcrumb-item">📚 Categories</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">🎨 Art & Animation</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">🎨 Create Visual Magic</span>
+        <h1>Art & Animation</h1>
+        <p class="hero-subtitle">Bring your games to life with stunning visuals. Learn everything from pixel art to 3D modeling, character animation to visual effects. Create assets that captivate players.</p>
+    </section>
+
+    <!-- 2D Art Section -->
+    <section class="section" id="2d">
+        <div class="category-section">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">🖼️</div>
+                <div>
+                    <h2>2D Art</h2>
+                    <p>Classic digital art for games</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎮 Pixel Art</h4>
+                    <p>Creating games using individual pixels. Popular style with nostalgic appeal and small file sizes.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>✒️ Vector Art</h4>
+                    <p>Scalable graphics using mathematical curves. Great for mobile games and crisp UI elements.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🖌️ Digital Painting</h4>
+                    <p>Traditional painting techniques in digital form. Backgrounds, character portraits, and concept art.</p>
+                    <span class="subcategory-count">Intermediate-Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📋 Spritesheets</h4>
+                    <p>Creating and organizing sprite sheets for game characters, animations, and UI elements.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🏞️ Tile Sets</h4>
+                    <p>Creating reusable tiles for level building. Consistent style and seamless tiling.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D Modeling Section -->
+        <div class="category-section" id="3d">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent);">📦</div>
+                <div>
+                    <h2>3D Modeling</h2>
+                    <p>Creating three-dimensional assets</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🔲 Low-Poly Modeling</h4>
+                    <p>Creating simplified 3D models with flat shading. Efficient and stylish for many game types.</p>
+                    <span class="subcategory-count">Beginner-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>✨ High-Poly Modeling</h4>
+                    <p>Detailed models for rendering, then baked to low-poly. Used in AAA games.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🧍 Character Modeling</h4>
+                    <p>Creating game-ready characters with proper topology for animation.</p>
+                    <span class="subcategory-count">Intermediate-Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🏠 Environment Modeling</h4>
+                    <p>Creating buildings, props, and world assets for game environments.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔧 Hard Surface Modeling</h4>
+                    <p>Modeling vehicles, weapons, and mechanical objects with precise geometry.</p>
+                    <span class="subcategory-count">Intermediate-Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌿 Organic Modeling</h4>
+                    <p>Sculpting creatures, plants, and natural forms using digital sculpting techniques.</p>
+                    <span class="subcategory-count">Intermediate-Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animation Section -->
+        <div class="category-section" id="animation">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">🎬</div>
+                <div>
+                    <h2>Animation</h2>
+                    <p>Bringing game assets to life</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🚶 2D Sprite Animation</h4>
+                    <p>Creating frame-by-frame animations for 2D games. Walk cycles, idle animations, attacks.</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔄 Keyframe Animation</h4>
+                    <p>Setting key poses and letting software interpolate. Traditional animation principles.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🦴 Rigging</h4>
+                    <p>Creating bone systems for characters. Weight painting and joint placement.</p>
+                    <span class="subcategory-count">Intermediate-Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>👥 Motion Capture</h4>
+                    <p>Recording real movements and applying to 3D characters. Equipment and workflow.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎭 Procedural Animation</h4>
+                    <p>Animation generated by code. IK systems, physics-based movement.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Texturing Section -->
+        <div class="category-section" id="texturing">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-pink);">🎨</div>
+                <div>
+                    <h2>Texturing & Materials</h2>
+                    <p>Surface appearance and materials</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🗺️ UV Mapping</h4>
+                    <p>Unwrapping 3D models to apply 2D textures. Seams, packing, and distortion.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📐 PBR Texturing</h4>
+                    <p>Physically Based Rendering workflow. Albedo, normal, roughness, metallic maps.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎭 Hand-Painted Textures</h4>
+                    <p>Stylized texturing with painted appearance. Popular in stylized games.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>✨ Material Shaders</h4>
+                    <p>Creating custom shaders for special effects. Water, fire, holographic materials.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- UI Design Section -->
+        <div class="category-section" id="ui">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">🖱️</div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>User interfaces and experience</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>📋 Menu Design</h4>
+                    <p>Creating intuitive main menus, pause screens, and options menus.</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📊 HUD Design</h4>
+                    <p>Heads-up displays for health, ammo, minimaps, and player feedback.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎯 Icon Design</h4>
+                    <p>Creating recognizable icons for inventory, skills, and UI elements.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📱 Responsive UI</h4>
+                    <p>Designing UI that works across different screen sizes and aspect ratios.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Visual Effects Section -->
+        <div class="category-section" id="vfx">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">✨</div>
+                <div>
+                    <h2>Visual Effects</h2>
+                    <p>Particles, shaders, and polish</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>💨 Particle Systems</h4>
+                    <p>Fire, smoke, sparks, magic effects using particle emitters.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🌊 Shader Programming</h4>
+                    <p>Writing custom shaders for unique visual effects and optimization.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📷 Post-Processing</h4>
+                    <p>Bloom, color grading, motion blur, and atmospheric effects.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>💧 Fluid Simulation</h4>
+                    <p>Water, smoke, and other dynamic fluid effects for games.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">🛠️ Art Tools</h2>
+            <p class="section-subtitle">Software for creating game art</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon" style="background: #F5792A;">🎨</div>
+                <h3>Blender</h3>
+                <p>Free, open-source 3D creation suite. Industry-standard for game modeling and animation.</p>
+                <a href="https://www.blender.org" target="_blank" class="card-link">Get Blender →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #7AA116;">✏️</div>
+                <h3>Aseprite</h3>
+                <p>The best pixel art editor. Affordable and used by professional pixel artists worldwide.</p>
+                <a href="https://www.aseprite.org" target="_blank" class="card-link">Get Aseprite →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #00A4EF;">🎨</div>
+                <h3>Piskel</h3>
+                <p>Free online pixel art editor. Great for beginners and quick sketches.</p>
+                <a href="https://www.piskelapp.com" target="_blank" class="card-link">Open Piskel →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #8B5CF6;">🖌️</div>
+                <h3>Krita</h3>
+                <p>Free digital painting program. Powerful brushes and painting tools.</p>
+                <a href="https://krita.org" target="_blank" class="card-link">Get Krita →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #0066CC;">📦</div>
+                <h3>Maya</h3>
+                <p>Industry-standard for character animation and complex 3D work. Used by AAA studios.</p>
+                <a href="https://www.autodesk.com/maya" target="_blank" class="card-link">Learn Maya →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #CC2929;">🧊</div>
+                <h3>3ds Max</h3>
+                <p>Powerful modeling and rendering tool. Great for environment art and hard surface modeling.</p>
+                <a href="https://www.autodesk.com/3ds-max" target="_blank" class="card-link">Learn 3ds Max →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources CTA -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>📚 Art Resources</h2>
+            <p>Explore tutorials and courses from top artists and platforms to improve your game art skills.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="resources.html" class="btn btn-primary">View Art Resources</a>
+                <a href="schedule.html" class="btn btn-secondary">View Learning Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://blender.org" target="_blank">Blender</a></li>
+                    <li><a href="https://www.aseprite.org" target="_blank">Aseprite</a></li>
+                    <li><a href="https://krita.org" target="_blank">Krita</a></li>
+                    <li><a href="https://www.piskelapp.com" target="_blank">Piskel</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

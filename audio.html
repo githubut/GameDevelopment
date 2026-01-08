@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn game audio - Music composition, sound effects, FMOD, Wwise, and audio implementation">
+    <title>Audio - Level Up Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search audio...">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <a href="index.html" class="breadcrumb-item">🏠 Home</a>
+        <span class="breadcrumb-separator">›</span>
+        <a href="categories.html" class="breadcrumb-item">📚 Categories</a>
+        <span class="breadcrumb-separator">›</span>
+        <span class="breadcrumb-current">🎵 Audio</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">🎵 Sound Matters</span>
+        <h1>Game Audio</h1>
+        <p class="hero-subtitle">Create immersive soundscapes and memorable music for your games. Learn composition, sound design, and audio implementation with industry-standard tools.</p>
+    </section>
+
+    <!-- Music Composition Section -->
+    <section class="section" id="music">
+        <div class="category-section">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-pink);">🎼</div>
+                <div>
+                    <h2>Music Composition</h2>
+                    <p>Creating game soundtracks</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎵 Music Theory</h4>
+                    <p>Scales, chords, harmony, and progressions for game music composition.</p>
+                    <span class="subcategory-count">Foundation</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎹 Melody Writing</h4>
+                    <p>Crafting memorable themes and leitmotifs that define your game's identity.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎻 Orchestration</h4>
+                    <p>Arranging for different instrument groups and creating rich, layered sound.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 Adaptive Music</h4>
+                    <p>Creating music that changes based on gameplay - intensity, location, and mood.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎧 Genre Styles</h4>
+                    <p>Chiptune, orchestral, electronic, and hybrid styles for different game types.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sound Effects Section -->
+        <div class="category-section" id="sfx">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent);">🔊</div>
+                <div>
+                    <h2>Sound Effects</h2>
+                    <p>Designing game sounds</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎙️ Foley Recording</h4>
+                    <p>Creating realistic sounds by recording everyday objects and materials.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔧 Sound Synthesis</h4>
+                    <p>Using synthesizers and plugins to create artificial and fantastical sounds.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎚️ Sound Editing</h4>
+                    <p>Processing, layering, and editing sounds for game use.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔀 Layering Sounds</h4>
+                    <p>Combining multiple sounds to create rich, believable audio effects.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎮 UI Sound Design</h4>
+                    <p>Creating satisfying sounds for menus, buttons, and user interactions.</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio Implementation Section -->
+        <div class="category-section" id="implementation">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--primary);">🎮</div>
+                <div>
+                    <h2>Audio Implementation</h2>
+                    <p>Putting audio in your games</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🔵 FMOD Integration</h4>
+                    <p>Using FMOD for adaptive audio, banks, and event-based sound triggering.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔴 Wwise Integration</h4>
+                    <p>AudioKinetic's middleware for sophisticated audio systems and profiling.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎵 Unity Audio</h4>
+                    <p>Built-in Unity audio system: AudioSource, AudioMixer, and spatial audio.</p>
+                    <span class="subcategory-count">Beginner</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🏗️ Unreal Audio</h4>
+                    <p>Sound cues, meta sounds, and audio mixing in Unreal Engine.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mixing & Mastering Section -->
+        <div class="category-section" id="mixing">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--secondary);">🎛️</div>
+                <div>
+                    <h2>Mixing & Mastering</h2>
+                    <p>Professional audio polish</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎚️ EQ Techniques</h4>
+                    <p>Equalization for balancing frequencies and making sounds sit well together.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📊 Compression</h4>
+                    <p>Dynamic range control for consistent and impactful audio.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔊 Spatial Audio</h4>
+                    <p>3D positioning, reverb, and creating immersive soundscapes.</p>
+                    <span class="subcategory-count">Intermediate</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎚️ Audio Mixing</h4>
+                    <p>Balancing music, dialogue, and SFX for different gameplay scenarios.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Adaptive Audio Section -->
+        <div class="category-section" id="adaptive">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-orange);">🔀</div>
+                <div>
+                    <h2>Adaptive Audio</h2>
+                    <p>Dynamic sound experiences</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎮 Interactive Music</h4>
+                    <p>Music that responds to gameplay - intensity, events, and player actions.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔄 Dynamic Mixing</h4>
+                    <p>Automating mix changes based on game state and player actions.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎯 Reactive Systems</h4>
+                    <p>Creating audio systems that respond to game mechanics and player input.</p>
+                    <span class="subcategory-count">Advanced</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audio Tools Section -->
+        <div class="category-section" id="tools">
+            <div class="category-header">
+                <div class="category-icon" style="background: var(--accent-pink);">🛠️</div>
+                <div>
+                    <h2>Audio Tools & Software</h2>
+                    <p>Equipment for game audio</p>
+                </div>
+            </div>
+            
+            <div class="subcategory-grid">
+                <div class="subcategory-card">
+                    <h4>🎹 DAWs</h4>
+                    <p>Digital Audio Workstations: Ableton Live, FL Studio, Logic Pro for music production.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🔧 Middleware</h4>
+                    <p>FMOD and Wwise for sophisticated audio implementation and adaptive music.</p>
+                    <span class="subcategory-count">Essential</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎙️ Recording Equipment</h4>
+                    <p>Microphones, audio interfaces, and recording environment setup.</p>
+                    <span class="subcategory-count">Equipment</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🆓 Free Tools</h4>
+                    <p>LMMS, Audacity, and other free options for getting started with game audio.</p>
+                    <span class="subcategory-count">Budget-Friendly</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>🎧 Plugins & Libraries</h4>
+                    <p>Sound effect libraries, synthesis plugins, and sample packs for game audio.</p>
+                    <span class="subcategory-count">Resources</span>
+                </div>
+                
+                <div class="subcategory-card">
+                    <h4>📦 Sound Libraries</h4>
+                    <p>Free and commercial sound effect collections for quick prototyping.</p>
+                    <span class="subcategory-count">Resources</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Audio Tools Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">🎁 Free Audio Tools</h2>
+            <p class="section-subtitle">Get started without spending money</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon" style="background: #87CEEB;">🎵</div>
+                <h3>LMMS</h3>
+                <p>Free, open-source music production. Create chiptunes, electronic, and orchestral music.</p>
+                <a href="https://lmms.io" target="_blank" class="card-link">Get LMMS →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #00CED1;">🎙️</div>
+                <h3>Audacity</h3>
+                <p>Free audio editor for recording, editing, and processing sound effects.</p>
+                <a href="https://www.audacityteam.org" target="_blank" class="card-link">Get Audacity →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #FF6B6B;">🎵</div>
+                <h3>BFXR / SFXR</h3>
+                <p>Generators for retro game sound effects. Quick 8-bit sounds for prototypes.</p>
+                <a href="https://sfxr.me" target="_blank" class="card-link">Try BFXR →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon" style="background: #9B59B6;">🎧</div>
+                <h3>OpenAir</h3>
+                <p>Free convolution reverb impulse responses for realistic space modeling.</p>
+                <a href="https://www.openair.hosted.york.ac.uk" target="_blank" class="card-link">Get Impulses →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Resources CTA -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>📚 Audio Resources</h2>
+            <p>Explore tutorials, courses, and documentation for game audio from industry professionals.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="resources.html" class="btn btn-primary">View Audio Resources</a>
+                <a href="schedule.html" class="btn btn-secondary">View Learning Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.fmod.com" target="_blank">FMOD</a></li>
+                    <li><a href="https://www.audiokinetic.com" target="_blank">Wwise</a></li>
+                    <li><a href="https://lmms.io" target="_blank">LMMS</a></li>
+                    <li><a href="https://www.audacityteam.org" target="_blank">Audacity</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

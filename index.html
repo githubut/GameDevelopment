@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Level Up Academy - Your comprehensive guide to learning game development with structured courses and resources">
+    <title>Level Up Academy - Game Development Learning Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span class="logo-text">Level Up Academy</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">🏠 Home</a></li>
+                <li><a href="schedule.html" class="nav-link">🗺️ Schedule</a></li>
+                <li><a href="categories.html" class="nav-link">📚 Categories</a></li>
+                <li><a href="resources.html" class="nav-link">🔗 Resources</a></li>
+            </ul>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search topics..." id="global-search">
+                    <button class="search-btn" aria-label="Search">🔍</button>
+                </div>
+            </div>
+            
+            <div class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <span class="hero-badge">🎯 Start Your Game Dev Journey Today!</span>
+        <h1>Master Game Development</h1>
+        <p class="hero-subtitle">Your comprehensive guide to becoming a game developer. Learn programming, art, design, audio, and more with our structured curriculum and curated resources.</p>
+        
+        <div class="cta-buttons">
+            <a href="schedule.html" class="btn btn-primary">🚀 Start Learning</a>
+            <a href="categories.html" class="btn btn-secondary">📚 Explore Categories</a>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="section">
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon programming">💻</div>
+                <h3>Programming</h3>
+                <p>Master game programming languages like C#, C++, Python, and JavaScript. Learn algorithms, data structures, and game-specific coding patterns.</p>
+                <a href="programming.html" class="card-link">Explore Programming →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon engines">⚙️</div>
+                <h3>Game Engines</h3>
+                <p>Get hands-on experience with industry-standard engines like Unity, Unreal Engine, Godot, and more. Build your first game today!</p>
+                <a href="engines.html" class="card-link">Explore Engines →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon art">🎨</div>
+                <h3>Art & Animation</h3>
+                <p>Create stunning 2D and 3D art, animations, and visual effects. Learn pixel art, 3D modeling, rigging, and character animation.</p>
+                <a href="art.html" class="card-link">Explore Art →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon audio">🎵</div>
+                <h3>Audio</h3>
+                <p>Design immersive soundscapes and music. Learn sound effects, composition, audio implementation with FMOD and Wwise.</p>
+                <a href="audio.html" class="card-link">Explore Audio →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon design">📐</div>
+                <h3>Game Design</h3>
+                <p>Learn the fundamentals of game design. Master mechanics, level design, storytelling, player psychology, and balancing.</p>
+                <a href="design.html" class="card-link">Explore Design →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Learn Game Dev Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">🎮 Why Learn Game Development?</h2>
+            <p class="section-subtitle">Game development is one of the most rewarding creative and technical pursuits</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <h3>🧠 Creative Expression</h3>
+                <p>Bring your wildest ideas to life. Games are a unique medium that combines art, storytelling, and interactivity.</p>
+            </div>
+            
+            <div class="card">
+                <h3>💼 Industry Growth</h3>
+                <p>The gaming industry is worth over $200 billion and continues to grow. High demand for skilled developers!</p>
+            </div>
+            
+            <div class="card">
+                <h3>🛠️ Transferable Skills</h3>
+                <p>Programming, project management, and design skills learned in game dev apply to many other fields.</p>
+            </div>
+            
+            <div class="card">
+                <h3>🤝 Community</h3>
+                <p>Join millions of developers worldwide. Share knowledge, collaborate on projects, and get feedback.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">🚀 Getting Started</h2>
+            <p class="section-subtitle">New to game development? Here's your roadmap to success</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">1️⃣</div>
+                <h3>Week 1-4: Foundation</h3>
+                <p>Start with basic programming concepts and an introduction to game engines. Learn how games actually work under the hood.</p>
+                <a href="schedule.html" class="btn btn-primary mt-2">View Schedule</a>
+            </div>
+            
+            <div class="card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">2️⃣</div>
+                <h3>Week 5-8: First Project</h3>
+                <p>Build your first complete game. Learn to create levels, add gameplay mechanics, and implement basic AI.</p>
+                <a href="schedule.html" class="btn btn-primary mt-2">View Schedule</a>
+            </div>
+            
+            <div class="card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">3️⃣</div>
+                <h3>Week 9-12: Polish & Publish</h3>
+                <p>Add art, music, and sound effects. Learn game polish, testing, and how to publish your game to the world.</p>
+                <a href="schedule.html" class="btn btn-primary mt-2">View Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">🛠️ Essential Tools</h2>
+            <p class="section-subtitle">The software you'll need to get started</p>
+        </div>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon engines">🎮</div>
+                <h3>Unity</h3>
+                <p>The world's most popular game engine. Great for 2D and 3D games. Free for beginners.</p>
+                <a href="engines.html#unity" class="card-link">Learn Unity →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon engines">🏗️</div>
+                <h3>Unreal Engine</h3>
+                <p>Professional-grade engine used by top studios. Powerful Blueprints system for non-coders.</p>
+                <a href="engines.html#unreal" class="card-link">Learn Unreal →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon engines">🌟</div>
+                <h3>Godot</h3>
+                <p>Open-source and completely free. Lightweight and great for 2D games.</p>
+                <a href="engines.html#godot" class="card-link">Learn Godot →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon art">🎨</div>
+                <h3>Blender</h3>
+                <p>Free, open-source 3D creation suite. Model, animate, and render stunning graphics.</p>
+                <a href="art.html#modeling" class="card-link">Learn Blender →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon art">✏️</div>
+                <h3>Aseprite</h3>
+                <p>The best tool for pixel art. Affordable and used by professional pixel artists worldwide.</p>
+                <a href="art.html#pixel" class="card-link">Learn Pixel Art →</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon audio">🎵</div>
+                <h3>LMMS</h3>
+                <p>Free, open-source music production. Create chiptunes and full orchestral scores.</p>
+                <a href="audio.html#music" class="card-link">Learn Music →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Resources Preview -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">⭐ Featured Resources</h2>
+            <p class="section-subtitle">Curated learning materials from around the web</p>
+        </div>
+        
+        <div class="resource-grid">
+            <div class="resource-card" data-type="video">
+                <div class="resource-header">
+                    <span class="resource-type video">📺 Video</span>
+                </div>
+                <h4 class="resource-title">Unity Official Learning Resources</h4>
+                <p class="resource-description">Official Unity tutorials, courses, and documentation from the creators themselves.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🟣 Unity</span>
+                    <span class="resource-tag">📚 Beginner</span>
+                </div>
+                <a href="https://learn.unity.com" target="_blank" class="resource-link">Go to Resource →</a>
+            </div>
+            
+            <div class="resource-card" data-type="course">
+                <div class="resource-header">
+                    <span class="resource-type course">📖 Course</span>
+                </div>
+                <h4 class="resource-title">Google Game Development Courses</h4>
+                <p class="resource-description">Professional courses on Android game development, Google Play, and more.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🔵 Android</span>
+                    <span class="resource-tag">📚 All Levels</span>
+                </div>
+                <a href="https://developer.android.com/games" target="_blank" class="resource-link">Go to Resource →</a>
+            </div>
+            
+            <div class="resource-card" data-type="documentation">
+                <div class="resource-header">
+                    <span class="resource-type documentation">📄 Docs</span>
+                </div>
+                <h4 class="resource-title">Unreal Engine Documentation</h4>
+                <p class="resource-description">Complete documentation for Unreal Engine 5, including Blueprints and C++ guides.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🔴 Unreal</span>
+                    <span class="resource-tag">📚 Beginner-Advanced</span>
+                </div>
+                <a href="https://docs.unrealengine.com" target="_blank" class="resource-link">Go to Resource →</a>
+            </div>
+            
+            <div class="resource-card" data-type="article">
+                <div class="resource-header">
+                    <span class="resource-type article">📝 Article</span>
+                </div>
+                <h4 class="resource-title">Godot Docs - Getting Started</h4>
+                <p class="resource-description">Official Godot documentation with tutorials for beginners and advanced users.</p>
+                <div class="resource-meta">
+                    <span class="resource-tag">🟢 Godot</span>
+                    <span class="resource-tag">📚 Beginner</span>
+                </div>
+                <a href="https://docs.godotengine.org" target="_blank" class="resource-link">Go to Resource →</a>
+            </div>
+        </div>
+        
+        <div class="text-center mt-3">
+            <a href="resources.html" class="btn btn-secondary">View All Resources →</a>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h2>🎮 Ready to Build Your First Game?</h2>
+            <p>Don't know where to start? Our structured 12-week curriculum will guide you from complete beginner to published game developer.</p>
+            <div class="cta-buttons mt-2" style="justify-content: center;">
+                <a href="schedule.html" class="btn btn-primary">Start the 12-Week Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🎮 Level Up Academy</h4>
+                <p>Your comprehensive guide to game development. Learn, create, and publish your dream game.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>📚 Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="schedule.html">🗺️ Learning Schedule</a></li>
+                    <li><a href="categories.html">📚 Categories</a></li>
+                    <li><a href="resources.html">🔗 Resources</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>💻 Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="programming.html">💻 Programming</a></li>
+                    <li><a href="engines.html">⚙️ Game Engines</a></li>
+                    <li><a href="art.html">🎨 Art & Animation</a></li>
+                    <li><a href="audio.html">🎵 Audio</a></li>
+                    <li><a href="design.html">📐 Game Design</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>🔗 Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="https://unity.com" target="_blank">Unity</a></li>
+                    <li><a href="https://unrealengine.com" target="_blank">Unreal Engine</a></li>
+                    <li><a href="https://godotengine.org" target="_blank">Godot</a></li>
+                    <li><a href="https://blender.org" target="_blank">Blender</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© <span class="current-year">2024</span> Level Up Academy. Made with ❤️ for aspiring game developers.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
